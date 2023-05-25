@@ -17,4 +17,6 @@ menu:
 
 ## **个人简介**
 
-我是Rico，来自中国-湖北-黄冈，目前就读于重庆邮电大学通信与信息学院，在读硕士研二，研究方向：深度学习、信道估计等。
+​	我是Rico，来自中国-湖北-黄冈，目前就读于重庆邮电大学通信与信息学院，在读硕士研二，研究方向：深度学习、目标检测、信道估计等。
+
+![](E:\Workspace\02_App_Files\06_Mine_Github\rico-blog\exampleSite\content\page\about\兔子_02.jpg)

@@ -58,7 +58,7 @@ params:
 
     sidebar:
         emoji: 🍥
-        subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        subtitle: 这里是Rico0807的个人博客网站
         avatar:
             enabled: true
             local: true

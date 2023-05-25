@@ -2,20 +2,14 @@
 author = "Rico0807"
 title = "基于Netlify构建博客"
 date = "2023-05-25"
-description = "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
+description = "本篇博客主要介绍如何在Netlify上部署博客网站"
 tags = [
-    "markdown",
-    "css",
-    "html",
-    "themes",
-]
-categories = [
-    "themes",
-    "syntax",
+    "Netlify"，
 ]
 series = ["Themes Guide"]
 aliases = ["migrate-from-jekyl"]
 image = "pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg"
+
 +++
 
 ## 基于Netlify构建博客
@@ -26,7 +20,13 @@ image = "pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg"
 >
 > Git官网：https://git-scm.com/
 
+基本步骤：
 
+> Step_01：在雨果官网中找到合适的Hugo网站模板，打开后点击Download，在进入的Github链接中选择fork到自己的Github库中
+>
+> Step_02：在Netlify网站中 Add Sites，网站源选择Github，导入成功后即可打开网站
+>
+> Step_03：根据个人需求，更新或改写模板网站中的内容
 
 ## 基于Git更新GitHub库
 
