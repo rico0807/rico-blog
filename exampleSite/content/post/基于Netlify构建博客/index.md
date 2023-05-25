@@ -53,3 +53,5 @@ git push [url] master
 > 1.在执行`git commit -m "change"`报错时，一般是 user.name 和 user.email未定义，通常使用`git config --global user.name xxxx`和`git config --global user.email xxxx`进行定义。
 >
 > 2.在第一次执行`git push [url] master`后会出现GitHub的授权或登录界面，按要求授权或登录即可完成更新上传。
+>
+> 3.上传是出现丢失服务等报错时，产生原因：一般是因为服务器的SSL证书没有经过第三方机构的签署，可使用`git config --global http.sslVerify "false"`，解除SSL验证后，再次git即可。
