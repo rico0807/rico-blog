@@ -16,7 +16,7 @@ image = "TianKongLong.jpg"
 
 <font color="#00aa00" size = "5">**2015**</font> 
 
-* U-Net: Convolutional Networks for Biomedical Image Segmentation (MICCAI)	[paper](https://arxiv.org/pdf/1505.04597.pdf)
+* U-Net: Convolutional Networks for Biomedical Image Segmentation (MICCAI)   [[<font color="#00aa00">**paper**</font>](https://arxiv.org/pdf/1505.04597.pdf)]
 
 ![](U-Net-Original.jpg)
 
@@ -27,7 +27,7 @@ image = "TianKongLong.jpg"
 
 <font color="#00aa00" size = "5">**2016**</font> 
 
-* V-Net: Fully Convolutional Neural Networks for Volumetric Medical Image Segmentation	[paper](https://campar.in.tum.de/pub/milletari2016Vnet/milletari2016Vnet.pdf)
+* V-Net: Fully Convolutional Neural Networks for Volumetric Medical Image Segmentation   [[<font color="#00aa00">**paper**</font>](https://campar.in.tum.de/pub/milletari2016Vnet/milletari2016Vnet.pdf)]
 
 ![](V-Net.jpg)
 
