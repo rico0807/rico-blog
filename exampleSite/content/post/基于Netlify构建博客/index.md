@@ -3,6 +3,9 @@ author = "Rico0807"
 title = "基于Netlify构建博客"
 date = "2023-05-25"
 description = "本篇博客主要介绍如何在Netlify上部署博客网站"
+tags = [
+	"Netlify",
+]
 series = ["Themes Guide"]
 aliases = ["migrate-from-jekyl"]
 image = "pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg"
