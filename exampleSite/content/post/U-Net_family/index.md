@@ -8,7 +8,7 @@ tags = [
 ]
 series = ["Themes Guide"]
 aliases = ["migrate-from-jekyl"]
-
+image = "U-Net-Title.jpg"
 
 +++
 
