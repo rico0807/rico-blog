@@ -5,7 +5,7 @@ date = "2023-05-25"
 description = "本篇博客主要介绍U-Net家族发展史"
 tags = [
 	"U-Net",
-]、
+]
 series = ["Themes Guide"]
 aliases = ["migrate-from-jekyl"]
 image = "TianKongLong.jpg"
