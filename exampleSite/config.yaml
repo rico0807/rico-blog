@@ -58,7 +58,7 @@ params:
 
     sidebar:
         emoji: 🍥
-        subtitle: 这里是Rico0807的个人博客网站
+        subtitle: 这里是Rico0807的博客网站
         avatar:
             enabled: true
             local: true
