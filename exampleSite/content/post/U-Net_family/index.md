@@ -18,6 +18,6 @@ aliases = ["migrate-from-jekyl"]
 
 * U-Net: Convolutional Networks for Biomedical Image Segmentation (MICCAI)	[paper](https://arxiv.org/pdf/1505.04597.pdf)
 
-![](E:\Workspace\02_App_Files\06_Mine_Github\rico-blog\exampleSite\content\post\U-Net_family\兔子_02.jpg)
+![](1.jpg)
 
 ​	本文首次提出由编码路径和解码路径组成的U型结构网络，U-Net。其中，编码路径由“卷积核+激活层+池化层”组成，解码路径由“卷积层+激活层+上采样层”组成。该U型网络结构中，编码路径和解码路径通过 Skip Connection连接，以保证浅层网络中的语义信息不会丢失。
