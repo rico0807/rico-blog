@@ -14,52 +14,52 @@ image = "TianKongLong.jpg"
 
 ## U-Net 家族发展史
 
-<font color="#00aa00" size = "5">**2015**</font> 
+### <font color="#00aa00" size = "6" face=Times New Roman>**2015**</font> 
 
 * U-Net: Convolutional Networks for Biomedical Image Segmentation (MICCAI)  [[**paper**](https://arxiv.org/pdf/1505.04597.pdf)]
 
 ![](U-Net-Original.jpg)
 
-总结：
-​	本文首次提出由编码路径和解码路径组成的U型结构网络，U-Net。其中，编码路径由“卷积核+激活层+池化层”组成，解码路径由“卷积层+激活层+上采样层”组成。该U型网络结构中，编码路径和解码路径通过 Skip Connection连接，以保证浅层网络中的语义信息不会丢失。
+> 总结：
+> 	本文首次提出由编码路径和解码路径组成的U型结构网络，U-Net。其中，编码路径由“卷积核+激活层+池化层”组成，解码路径由“卷积层+激活层+上采样层”组成。该U型网络结构中，编码路径和解码路径通过 Skip Connection连接，以保证浅层网络中的语义信息不会丢失。
 
 
 
-<font color="#00aa00" size = "5">**2016**</font> 
+### <font color="#00aa00" size = "6" face=Times New Roman>**2016**</font> 
 
 * V-Net: Fully Convolutional Neural Networks for Volumetric Medical Image Segmentation   [[**paper**](https://campar.in.tum.de/pub/milletari2016Vnet/milletari2016Vnet.pdf)]
 
 ![](V-Net.jpg)
 
-总结：
-​	在这项工作中，作者提出了一种基于三维全卷积神经网络的三维图像分割方法。CNN可以进行端到端的前列腺核磁共振成像的训练，并能够预测整个三维图像的分割。提出了一种新的基于Dice系数的目标函数，并在训练过程中对其进行了优化。这样就可以在解决前景和背景体素数量严重不平衡的情况。为了处理有限数量的可用于训练的标签图，使用随机非线性转换和直方图匹配来增加数据。
+> 总结：
+> 	在这项工作中，作者提出了一种基于三维全卷积神经网络的三维图像分割方法。CNN可以进行端到端的前列腺核磁共振成像的训练，并能够预测整个三维图像的分割。提出了一种新的基于Dice系数的目标函数，并在训练过程中对其进行了优化。这样就可以在解决前景和背景体素数量严重不平衡的情况。为了处理有限数量的可用于训练的标签图，使用随机非线性转换和直方图匹配来增加数据。
 
 
 * 3D U-Net: Learning Dense Volumetric Segmentation from Sparse Annotation   [[**paper**](https://arxiv.org/pdf/1606.06650.pdf)]
 
 ![](3D-U-Net.jpg)
 
-总结：
-​	这篇文章的网络结构相比于U-Net并没有什么变化，只是在数据集、训练阶段、损失上不同。
+> 总结：
+> 	这篇文章的网络结构相比于U-Net并没有什么变化，只是在数据集、训练阶段、损失上不同。
 
 
 
-<font color="#00aa00" size = "5">**2017**</font> 
+### <font color="#00aa00" size = "6" face=Times New Roman>**2017**</font> 
 
 * H-DenseUNet: Hybrid Densely Connected UNet for Liver and Tumor Segmentation from CT Volumes (IEEE Transactions on Medical Imaging)   [[**paper**](https://arxiv.org/pdf/1709.07330.pdf)] 
 
 ![](H-DenseU-Net.jpg)
 
-总结：
-​	首先，为了充分提取高水平片内的特征，使用基于二维卷积设计了一个深层和高效的网络，2D DenseU-Net，将紧密连接的路径和U-Net连接的优点融合在一起。密集连通路径是由密集连通网络(DenseNet)衍生而来的，其中改进的信息流和参数效率降低了训练深度网络的难度。与DenseNet不同，该文添加了U-Net连接，即Skip Connection。因此，该网络可以实现低层次的空间特征保存，从而更好地进行片内上下文搜索。
-​	其次，为了研究目标特征的进一步表示，设计了一个端到端训练系统H-DenseUNet，该系统通过混合特征融合(HFF)层有效地提取层内和层间特征，并进行联合优化。3D DenseUNet是通过自动上下文机制与2D DenseU-Net集成的，这是堆叠共性的一般形式。在二维DenseU-Net语义概率的指导下，可以很好地减轻3D DenseU-Net的优化负担，提高了三维空间中的上下文提取的训练效率。
+> 总结：
+> 	首先，为了充分提取高水平片内的特征，使用基于二维卷积设计了一个深层和高效的网络，2D DenseU-Net，将紧密连接的路径和U-Net连接的优点融合在一起。密集连通路径是由密集连通网络(DenseNet)衍生而来的，其中改进的信息流和参数效率降低了训练深度网络的难度。与DenseNet不同，该文添加了U-Net连接，即Skip Connection。因此，该网络可以实现低层次的空间特征保存，从而更好地进行片内上下文搜索。
+> 	其次，为了研究目标特征的进一步表示，设计了一个端到端训练系统H-DenseUNet，该系统通过混合特征融合(HFF)层有效地提取层内和层间特征，并进行联合优化。3D DenseUNet是通过自动上下文机制与2D DenseU-Net集成的，这是堆叠共性的一般形式。在二维DenseU-Net语义概率的指导下，可以很好地减轻3D DenseU-Net的优化负担，提高了三维空间中的上下文提取的训练效率。
 
 
 * GP-Unet: Lesion Detection from Weak Labels with a 3D Regression Network (MICCAI)   [[**paper**](https://arxiv.org/pdf/1705.07999.pdf)]
 
 
 
-<font color="#00aa00" size = "5">**2018**</font> 
+### <font color="#00aa00" size = "6" face=Times New Roman>**2018**</font> 
 
 * UNet++: A Nested U-Net Architecture for Medical Image Segmentation (MICCAI)   [[**paper**](https://arxiv.org/pdf/1807.10165.pdf)]
 * MDU-Net: Multi-scale Densely Connected U-Net for biomedical image segmentation   [[**paper**](https://arxiv.org/pdf/1812.00352.pdf)]
@@ -90,19 +90,19 @@ image = "TianKongLong.jpg"
 
 ![](Res-U-Net.jpg)
 
-总结：
-​	Res-UNet 和 Dense-UNet 分别受到残差连接和密集连接的启发，将 U-Net 的每一个子模块分别替换为具有残差连接和密集连接的形式。Res-UNet 用于视网膜图像的分割，其结构如下图所示，其中灰色实线表示各个模块中添加的残差连接
+> 总结：
+> 	Res-UNet 和 Dense-UNet 分别受到残差连接和密集连接的启发，将 U-Net 的每一个子模块分别替换为具有残差连接和密集连接的形式。Res-UNet 用于视网膜图像的分割，其结构如下图所示，其中灰色实线表示各个模块中添加的残差连接
 
 * Fully Dense UNet for 2D Sparse Photoacoustic Tomography Artifact Removal   [[**paper**](https://arxiv.org/ftp/arxiv/papers/1808/1808.10848.pdf)]
 
 ![](Dense-U-Net.jpg)
 
-总结：
-​	密集连接即将子模块中某一层的输出分别作为后续若干层的输入的一部分，某一层的输入则来自前面若干层的输出的组合。下图是 Dense-UNet 中的密集连接的一个例子。该文章中将 U-Net 的各个子模块替换为这样的密集连接模块，提出 Fully Dense UNet 用于去除图像中的伪影。
+> 总结：
+> 	密集连接即将子模块中某一层的输出分别作为后续若干层的输入的一部分，某一层的输入则来自前面若干层的输出的组合。下图是 Dense-UNet 中的密集连接的一个例子。该文章中将 U-Net 的各个子模块替换为这样的密集连接模块，提出 Fully Dense UNet 用于去除图像中的伪影。
 
 
 
-<font color="#00aa00" size = "5">**2019**</font> 
+### <font color="#00aa00" size = "6" face=Times New Roman>**2019**</font> 
 
 * MultiResUNet : Rethinking the U-Net Architecture for Multimodal Biomedical Image Segmentation   [[**paper**](https://arxiv.org/pdf/1902.04049v1.pdf)]
 * U-NetPlus: A Modified Encoder-Decoder U-Net Architecture for Semantic and Instance Segmentation of Surgical Instrument   [[**paper**](https://arxiv.org/pdf/1902.08994.pdf)]
@@ -140,52 +140,52 @@ image = "TianKongLong.jpg"
 
 ![](Res-U-Net-2.jpg)
 
-总结：
-​	ResU-Net++ 是在 ResU-Net 基础上的改进，如果说 ResUNet 是结合了 Res-Net 和 U-Net 的优势，那么 ResUNet++ 就是在 ResUNet 的基础上，继续引入 squeeze and excitation block，ASPP 和 attention block。
+> 总结：
+> 	ResU-Net++ 是在 ResU-Net 基础上的改进，如果说 ResUNet 是结合了 Res-Net 和 U-Net 的优势，那么 ResUNet++ 就是在 ResUNet 的基础上，继续引入 squeeze and excitation block，ASPP 和 attention block。
 
 * MultiResUNet : Rethinking the U-Net Architecture for Multimodal Biomedical Image Segmentation   [[**paper**](https://arxiv.org/pdf/1902.04049v1.pdf)]
 
 ![](MultiRes-U-Net.jpg)
 
-总结：
-​	两点创新：1. 使用 MutiRes 模块替换 UNet 中的传统卷积模块。2. 使用 ResPath 替换传统 UNet 中的简单的 skip connection。MutiRes 模块是一个残差连接的扩展，在该模块中三个 3x3 的卷积结果拼接起来作为一个组合的特征图，再与输入特征图经过 1x1 卷积得到的结果相加。
+> 总结：
+> 	两点创新：1. 使用 MutiRes 模块替换 UNet 中的传统卷积模块。2. 使用 ResPath 替换传统 UNet 中的简单的 skip connection。MutiRes 模块是一个残差连接的扩展，在该模块中三个 3x3 的卷积结果拼接起来作为一个组合的特征图，再与输入特征图经过 1x1 卷积得到的结果相加。
 
 
 
-<font color="#00aa00" size = "5">**2020**</font> 
+### <font color="#00aa00" size = "6" face=Times New Roman>**2020**</font> 
 
 * U^2-Net: Going Deeper with Nested U-Structure for Salient Object Detection (Pattern Recognition 2020)    [[**paper**](https://arxiv.org/pdf/2005.09007v1.pdf)]
 
 ![](U2-Net.jpg)
 
-总结：
-​	U^2-Net就是在U-Net基础上，将其编码路径和解码路径分别嵌入一个子U-Net网络，简称：套娃。优势当然在于U^2-Net具备较好的语义分割能力，但是不足处可能在于，处理速度慢、模型尺寸大等。
+> 总结：
+> 	U^2-Net就是在U-Net基础上，将其编码路径和解码路径分别嵌入一个子U-Net网络，简称：套娃。优势当然在于U^2-Net具备较好的语义分割能力，但是不足处可能在于，处理速度慢、模型尺寸大等。
 
 * UNET 3+: A Full-Scale Connected UNet for Medical Image Segmentation (ICASSP 2020)   [[**paper**](https://arxiv.org/ftp/arxiv/papers/2004/2004.08790.pdf)]
 
 ![](UNet-3.jpg)
 
-总结：
-​	UNet 3+ 认为 UNet++ 尽管使用了密集的跳跃连接，但它没有充分利用好多尺度的信息，因此 UNet 3+ 提出了 full-scale skip connections。
+> 总结：
+> 	UNet 3+ 认为 UNet++ 尽管使用了密集的跳跃连接，但它没有充分利用好多尺度的信息，因此 UNet 3+ 提出了 full-scale skip connections。
 
 * DoubleU-Net: A Deep Convolutional Neural Network for Medical Image Segmentation[[**paper**](https://arxiv.org/pdf/2006.04868.pdf)]
 
 ![](DC-U-Net.jpg)
 
-总结：
-​	DC-U-Net 的作者认为多尺度的信息有利于分割精度的提升，一条 MultiRes block 提供的信息不够丰富，那就将其增加到两条，然后获取两条不同路径上的 MultiRes block 得到的特征结果，最终结果上能够有一定提升。
+> 总结：
+> 	DC-U-Net 的作者认为多尺度的信息有利于分割精度的提升，一条 MultiRes block 提供的信息不够丰富，那就将其增加到两条，然后获取两条不同路径上的 MultiRes block 得到的特征结果，最终结果上能够有一定提升。
 
 
 
-<font color="#00aa00" size = "5">**2021**</font> 
+### <font color="#00aa00" size = "6" face=Times New Roman>**2021**</font> 
 
 * TransUNet: Transformers Make Strong Encoders for Medical Image Segmentation   [[**paper**](https://arxiv.org/pdf/2102.04306.pdf)]
 
 ![](TransU-Net.jpg)
 
-总结：
-​	尽管 U-Net 系列网络已经取得了很大的成功，但存在一个问题：它们无法进行位于时间维度上的长距离依赖性建模任务。这个问题的根源在于 CNN 无法存储记忆信息，因此，本文中作者将 Transformer 架构引入到 U-Net 中。客观地说，TransU-Net 没有使用 Transformer 完全替换掉 U-Net 中的 CNN。相反，而是将 Transformer 作为一个中间件，完成长距离依赖建模，其它与一般的 U-Net 架构并没有什么很大的差异。
-​	具体为：一方面，Transformer将来自卷积神经网络（CNN）特征图的标记化图像块，编码为提取全局上下文的输入序列。另一方面，解码器对编码的特征进行上采样，然后将其与高分辨率的CNN特征图组合以实现精确的定位。作者认为，借助U-Net的组合，通过恢复局部的空间信息，可以将Transformers用作医学图像分割任务的强大编码器。
+> 总结：
+> 	尽管 U-Net 系列网络已经取得了很大的成功，但存在一个问题：它们无法进行位于时间维度上的长距离依赖性建模任务。这个问题的根源在于 CNN 无法存储记忆信息，因此，本文中作者将 Transformer 架构引入到 U-Net 中。客观地说，TransU-Net 没有使用 Transformer 完全替换掉 U-Net 中的 CNN。相反，而是将 Transformer 作为一个中间件，完成长距离依赖建模，其它与一般的 U-Net 架构并没有什么很大的差异。
+> 	具体为：一方面，Transformer将来自卷积神经网络（CNN）特征图的标记化图像块，编码为提取全局上下文的输入序列。另一方面，解码器对编码的特征进行上采样，然后将其与高分辨率的CNN特征图组合以实现精确的定位。作者认为，借助U-Net的组合，通过恢复局部的空间信息，可以将Transformers用作医学图像分割任务的强大编码器。
 
 
 
