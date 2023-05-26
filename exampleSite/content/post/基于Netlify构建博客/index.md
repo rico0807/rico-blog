@@ -40,7 +40,7 @@ image = "pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg"
 >
 > Step_04：上传
 
-```git
+```gas
 git clone [url]
 
 git add *
