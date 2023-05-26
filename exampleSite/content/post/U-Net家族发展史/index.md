@@ -177,4 +177,17 @@ image = "TianKongLong.jpg"
 
 
 
+<font color="#00aa00" size = "5">**2021**</font> 
+
+* TransUNet: Transformers Make Strong Encoders for Medical Image Segmentation   [[**paper**](https://arxiv.org/pdf/2102.04306.pdf)]
+
+![](TransU-Net.jpg)
+
+总结：
+​	尽管 U-Net 系列网络已经取得了很大的成功，但存在一个问题：它们无法进行位于时间维度上的长距离依赖性建模任务。这个问题的根源在于 CNN 无法存储记忆信息，因此，本文中作者将 Transformer 架构引入到 U-Net 中。客观地说，TransU-Net 没有使用 Transformer 完全替换掉 U-Net 中的 CNN。相反，而是将 Transformer 作为一个中间件，完成长距离依赖建模，其它与一般的 U-Net 架构并没有什么很大的差异。
+​	具体为：一方面，Transformer将来自卷积神经网络（CNN）特征图的标记化图像块，编码为提取全局上下文的输入序列。另一方面，解码器对编码的特征进行上采样，然后将其与高分辨率的CNN特征图组合以实现精确的定位。作者认为，借助U-Net的组合，通过恢复局部的空间信息，可以将Transformers用作医学图像分割任务的强大编码器。
+
+
+
+
 ------------------（持续更新中，期待更精彩的U-Net内容）
